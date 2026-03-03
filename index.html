@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Tejaswini.dev</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <p class="hero-greeting">Hello, <span class="greeting-highlight">My Name is</span></p>
+                <h1 class="hero-name">Tejaswini</h1>
+                <h2 class="hero-lastname">Garimella</h2>
+                <p class="hero-label">Computer Science Student</p>
+                <p class="hero-location">I'm from Andhra Pradesh, India.</p>
+                <p class="hero-description">Currently pursuing B.Tech in CSE at NIT Delhi</p>
+                
+                <div class="hero-social">
+                    <a href="https://github.com/Tejaswini-co" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/tejaswinichowdary811/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="https://drive.google.com/uc?export=download&id=1DbyXfvf2jG-GvvuThK5eRBl9Q0jHWNo_" class="btn-download" target="_blank">Download Resume</a>
+                    <a href="#skills" class="btn-link">My Skills</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="profile-image">
+                    <img src="assets/images/profile.jpg" alt="Tejaswini Garimella">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/about-photo.jpg" alt="Tejaswini Garimella">
+                </div>
+                <div class="about-text">
+                    <h3>Hi! I am Tejaswini Garimella</h3>
+                    <div class="about-info">
+                        <p><i class="fas fa-birthday-cake"></i> <strong>Date of Birth:</strong> August 30th, 2006</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Andhra Pradesh, India</p>
+                    </div>
+                    <p>I'm currently pursuing my <strong>Bachelor's degree in Computer Science and Engineering</strong> at <strong>National Institute of Technology, Delhi</strong>.</p>
+                    <p>As a motivated software engineer, I have a strong interest in <strong>AI integration with web applications</strong> and a passion for problem-solving. I enjoy working with <strong>C++</strong> and <strong>Python</strong>, focusing on building efficient, user-focused digital experiences.</p>
+                    <p>In my free time, I explore tech podcasts, participate in coding challenges, and watch documentaries about innovation and space technology. I'm also passionate about <strong>UI/UX design</strong> and enjoy experimenting with modern design trends to improve user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="stat-number" data-target="4">0</h3>
+                    <p class="stat-label">Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="stat-number" data-target="10">0</h3>
+                    <p class="stat-label">Technologies</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="stat-number" data-target="100">0</h3>
+                    <p class="stat-label">Problem Solved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <h4>HTML</h4>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <h4>CSS / Tailwind CSS</h4>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <h4>JavaScript</h4>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <h4>React.js</h4>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <h4>Next.js</h4>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <h4>Python</h4>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <h4>FastAPI</h4>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <h4>MySQL / PostgreSQL</h4>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <h4>PyTorch / Hugging Face</h4>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&h=400&fit=crop" alt="AI Legal Translator">
+                    </div>
+                    <div class="project-content">
+                        <h3>AI for Cross-Language Legal Transparency</h3>
+                        <p>AI-powered platform that translates legal documents into 50+ languages and simplifies complex legal text while preserving meaning, deployed with enterprise-grade scalability.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Marcelofury/IBMGenZ-ONL137" target="_blank" class="project-btn" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop" alt="Edu Bridge">
+                    </div>
+                    <div class="project-content">
+                        <h3>Edu_Bridge – Mentor Mentee Connector</h3>
+                        <p>Web platform connecting students with professors and alumni based on shared interests with registration, search, collaboration, and project request features.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Tejaswini-co/Edu_Bridge" target="_blank" class="project-btn" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop" alt="AI Course Generator">
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Course Generator & Learning Platform</h3>
+                        <p>Full-stack AI system that generates structured courses dynamically and provides a responsive learning interface with secure authentication.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Tejaswini-co/AI_Course_Generator" target="_blank" class="project-btn" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=600&h=400&fit=crop" alt="Ride Share">
+                    </div>
+                    <div class="project-content">
+                        <h3>Ride Sharing Web Application</h3>
+                        <p>Frontend ride-booking platform with interactive UI, ride selection, booking flow, and dynamic trip simulation features.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Tejaswini-co/FJ-FE-R2-Garimella-Tejaswini-NIT-Delhi-" target="_blank" class="project-btn" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <div class="resume-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023 - 2027</div>
+                            <h4>Bachelor of Technology in Computer Science and Engineering</h4>
+                            <p class="company">National Institute of Technology Delhi</p>
+                            <p>Currently pursuing degree with focus on AI/ML integration, web development, and problem-solving.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-download">
+                    <a href="https://drive.google.com/uc?export=download&id=1DbyXfvf2jG-GvvuThK5eRBl9Q0jHWNo_" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-download"></i> Download Full Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-layout">
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Address</h4>
+                        <p>Andhra Pradesh, India</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h4>Computer Science Student</h4>
+                        <p>Available for Opportunities</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>231210044@nitdelhi.ac.in</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p>+91 9030478888</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xreawjjd" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Full Name *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email Address *" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Your Subject *" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message *" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Sending...
+                        </span>
+                    </button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Garimella Tejaswini. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Tejaswini-co" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/tejaswinichowdary811/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
